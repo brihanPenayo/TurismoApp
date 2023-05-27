@@ -1,6 +1,7 @@
-import React from 'react';
-import TarjetaPresentacio from './TarjetaPresentacio';
+import Footer from '../partials/Footer';
+import Header from '../partials/Header';
 import CatalogoPresentacion from './CatalogoPresentacion';
+
 
 const Presentacion = () => {
   const CatalogoItem = [
@@ -44,21 +45,25 @@ const Presentacion = () => {
   ];
 
   return (
-    <div className='bg-white min-h-screen'>
-      <header className='flex justify-center items-center'>
-        <h1 className='p-8 text-2xl font-bold text-gray-900'>Registra un servicio</h1>
-      </header>
+    <>
+      <Header />
+      <div className='bg-white min-h-screen'>
+        <header className='flex justify-center items-center'>
+          <h1 className='p-8 text-2xl font-bold text-gray-900'>Registra un servicio</h1>
+        </header>
 
-      <div className='grid  gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10'>
-        {CatalogoItem.map(item => (
-          <CatalogoPresentacion
-            key={item.id}
-            backgroundImage={item.img}
-            title={item.nombre}
-          />
-        ))}
+        <div className='grid  gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10'>
+          {CatalogoItem.map(item => (
+            <CatalogoPresentacion
+              key={item.id}
+              backgroundImage={item.img}
+              title={item.nombre}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

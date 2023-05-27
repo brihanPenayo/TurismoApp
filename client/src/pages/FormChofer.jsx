@@ -4,6 +4,102 @@ import Header from '../partials/Header'
 import Footer from '../partials/Footer'
 
 const Registro = () => {
+
+	let local = {
+		data: [{
+			CDE: [{
+				hoteles: [{
+					nombre: "Hotel A",
+					descripcion: "Descripción del Hotel A",
+					img: "ruta/imagen-hotel-a.jpg"
+				}],
+				choferes: [{
+					imagen: "ruta/imagen-chofer-1.jpg",
+					nombre: "Chofer 1",
+					precio: 50,
+					licencia: "123456789",
+					modeloAuto: "Auto 1",
+					horario: "9:00 AM - 5:00 PM",
+					color: "Rojo",
+					telefono: "123456789",
+					ciudad: "CDE"
+				}],
+				guias: [{
+					nombre: "Guía 1",
+					imagen: "ruta/imagen-guia-1.jpg"
+				}],
+				restaurantes: [{
+					nombre: "Restaurante 1",
+					img: "ruta/imagen-restaurante-1.jpg"
+				}],
+				compras: [{
+					nombre: "Tienda 1",
+					img: "ruta/imagen-tienda-1.jpg"
+				}]
+			}],
+			Encar: [{
+				hoteles: [{
+					nombre: "Hotel B",
+					descripcion: "Descripción del Hotel B",
+					img: "ruta/imagen-hotel-b.jpg"
+				}],
+				choferes: [{
+					imagen: "ruta/imagen-chofer-2.jpg",
+					nombre: "Chofer 2",
+					precio: 60,
+					licencia: "987654321",
+					modeloAuto: "Auto 2",
+					horario: "8:00 AM - 4:00 PM",
+					color: "Azul",
+					telefono: "987654321",
+					ciudad: "Encarnación"
+				}],
+				guias: [{
+					nombre: "Guía 2",
+					imagen: "ruta/imagen-guia-2.jpg"
+				}],
+				restaurantes: [{
+					nombre: "Restaurante 2",
+					img: "ruta/imagen-restaurante-2.jpg"
+				}],
+				compras: [{
+					nombre: "Tienda 2",
+					img: "ruta/imagen-tienda-2.jpg"
+				}]
+			}],
+			Asuncion: [{
+				hoteles: [{
+					nombre: "Hotel C",
+					descripcion: "Descripción del Hotel C",
+					img: "ruta/imagen-hotel-c.jpg"
+				}],
+				choferes: [{
+					imagen: "ruta/imagen-chofer-3.jpg",
+					nombre: "Chofer 3",
+					precio: 70,
+					licencia: "567891234",
+					modeloAuto: "Auto 3",
+					horario: "10:00 AM - 6:00 PM",
+					color: "Verde",
+					telefono: "567891234",
+					ciudad: "Asunción"
+				}],
+				guias: [{
+					nombre: "Guía 3",
+					imagen: "ruta/imagen-guia-3.jpg"
+				}],
+				restaurantes: [{
+					nombre: "Restaurante 3",
+					img: "ruta/imagen-restaurante-3.jpg"
+				}],
+				compras: [{
+					nombre: "Tienda 3",
+					img: "ruta/imagen-tienda-3.jpg"
+				}]
+			}]
+		}]
+	};
+
 	const [dataPerson, setDataPerson] = useState({
 		name: '',
 		lastname: '',
@@ -20,7 +116,12 @@ const Registro = () => {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		try {
-
+			localStorage.setItem('dataPerson', JSON.stringify(dataPerson));
+			Swal.fire({
+				icon: 'success',
+				title: '¡Datos registrados!',
+				text: 'Los datos se han guardado correctamente.',
+			});
 		} catch (error) {
 			console.log(error);
 			Swal.fire({
