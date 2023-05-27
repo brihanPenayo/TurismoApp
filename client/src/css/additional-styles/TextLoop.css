@@ -1,0 +1,35 @@
+@keyframes fadeAnimation {
+  0%{
+    opacity: 0;
+   }
+   15%{
+    opacity: 1;
+   }
+   50%{
+     opacity: 1;
+    } 
+    85%{
+    opacity: 1;
+   }
+   100%{
+    opacity: 0;
+   }
+  }
+  
+  .text-rotator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fade {
+    animation-name: fadeAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  /* .loop__effect {
+    -webkit-animation: test 4s ease infinite;
+    animation: test 4s ease infinite;
+  } */
