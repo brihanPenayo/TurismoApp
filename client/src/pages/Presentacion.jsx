@@ -22,21 +22,42 @@ const Presentacion = () => {
       descripcion: 'Registra aqui tu hotel',
       img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
     },
+    {
+      id: 3,
+      nombre: 'Eventos',
+      descripcion: 'Registra aqui tu hotel',
+      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+    },
+    {
+      id: 3,
+      nombre: 'Atracciones',
+      descripcion: 'Registra aqui tu hotel',
+      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+    },
+    {
+      id: 3,
+      nombre: 'Tiendas',
+      descripcion: 'Registra aqui tu hotel',
+      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+    },
     // Agrega más tarjetas aquí...
   ];
 
   return (
-    <div>
-      <h1>Registra un servicio</h1>
-      <div className='flex w-full justify-center'>
+    <div className='bg-white min-h-screen'>
+      <header className='flex justify-center items-center'>
+        <h1 className='p-8 text-2xl font-bold text-gray-900'>Registra un servicio</h1>
+      </header>
+
+      <div className='grid  gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10'>
         {CatalogoItem.map(item => (
           <CatalogoPresentacion
+            key={item.id}
             backgroundImage={item.img}
             title={item.nombre}
-          />)
-        )}
+          />
+        ))}
       </div>
-
     </div>
   );
 };
