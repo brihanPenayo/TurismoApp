@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     backgroundImage: {
       'hero': "url('../images/pexels-turist.jpg')",
+      'ads': "url('../images/pexels-pb.jpg')"
     },
     extend: {
       colors: {
