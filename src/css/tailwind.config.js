@@ -4,11 +4,14 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    backgroundImage: {
+      'hero': "url('../images/pexels-turist.jpg')",
+    },
     extend: {
       colors: {
         'aml-100': '#FFFAF5',
-        'aml': '#FFDF91',
-        'aml-b': '#E0BE69',
+        'aml': '#0267c1',
+        'aml-b': '#204566',
         'blk': '#020A1E',
         'cel': '#698BE0',
         gray: {
