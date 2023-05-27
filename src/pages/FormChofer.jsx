@@ -37,19 +37,23 @@ const Registro = () => {
 			<div className='flex justify-center'>
 				<form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-72 ">
 					<div className="mb-4">
-						<label htmlFor="name" className="block text-gray-700 font-bold mb-2">Nombre:</label>
+						<label htmlFor="name" className="block text-gray-700 font-bold mb-2">Nombre y Apellido:</label>
 						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" value={dataPerson.name} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="lastname" className="block text-gray-700 font-bold mb-2">Apellido:</label>
-						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastname" name="lastname" value={dataPerson.lastname} onChange={handleChange} required />
+						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Número de Licencia:</label>
+						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="documento" name="documento" value={dataPerson.documento} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email:</label>
+						<label htmlFor="email" className="block text-gray-700 font-bold mb-2">Datos del automóvil:</label>
 						<input type="email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" value={dataPerson.email} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Documento:</label>
+						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Tarifa Base:</label>
+						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="documento" name="documento" value={dataPerson.documento} onChange={handleChange} required />
+					</div>
+					<div className="mb-4">
+						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Horario Disponible:</label>
 						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="documento" name="documento" value={dataPerson.documento} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
