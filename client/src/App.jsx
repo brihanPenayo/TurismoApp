@@ -15,6 +15,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 import Presentacion from './pages/Presentacion';
+import FormChofer from './pages/FormChofer'
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/Registros" element={<Presentacion />} />
+        <Route path='/form-chofer' element={<FormChofer/>}/>
 
       </Routes>
     </>

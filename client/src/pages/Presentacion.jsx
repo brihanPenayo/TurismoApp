@@ -23,22 +23,22 @@ const Presentacion = () => {
       img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
     },
     {
-      id: 3,
+      id: 4,
       nombre: 'Eventos',
       descripcion: 'Registra aqui tu hotel',
-      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+      img: "https://elolivar.es/olivar-content/uploads/2021/06/salones-para-eventos.png",
     },
     {
-      id: 3,
+      id: 5,
       nombre: 'Atracciones',
       descripcion: 'Registra aqui tu hotel',
-      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+      img: "https://dondeviajar.co/wp-content/uploads/2021/08/Las-5-mejores-atracciones-turisticas-de-Paraguay-1024x683.jpg",
     },
     {
-      id: 3,
+      id: 6,
       nombre: 'Tiendas',
       descripcion: 'Registra aqui tu hotel',
-      img: "https://www.emagister.com/blog/wp-content/uploads/2019/04/ch%C3%B3fer-privado.jpg",
+      img: "https://img.freepik.com/foto-gratis/tienda-ropa-tienda-ropa-perchas-tienda-boutique-moderna_1150-8886.jpg",
     },
     // Agrega más tarjetas aquí...
   ];
