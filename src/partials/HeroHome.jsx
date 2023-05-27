@@ -27,11 +27,6 @@ function HeroHome() {
               </a>
             </div>
           </div>
-
-          {/* Hero image */}
-          <div>
-            {/* <Swipers /> */}
-          </div>
         </div>
       </div>
     </section>
