@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import TextLoop from './TextLoop';
 import { Swipers } from './Swipers';
 import { Banner } from './Banner';
+import Testimonials from './Testimonials';
 
 
 function HeroHome() {
@@ -32,6 +33,7 @@ function HeroHome() {
       </div>
       <Banner />
     </section>
+      
   );
 }
 

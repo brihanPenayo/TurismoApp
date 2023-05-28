@@ -12,8 +12,8 @@ function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Don't take our word for it</h2>
-            <p className="text-xl text-gray-400">Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.</p>
+            <h2 className="h2 mb-4">Comentarios</h2>
+            <p className="text-xl text-gray-400">En Turismo App nos preocupamos por tu comodidad, es por eso que puedes compartir tus comentarios.</p>
           </div>
 
           {/* Testimonials */}
@@ -29,9 +29,9 @@ function Testimonials() {
                     </svg>
                         </div>
                 </div>
-                <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                <blockquote className="text-lg text-gray-400 grow">— ¡Esta plataforma de turismo es increíble! Me encanta cómo facilita todo el proceso de planificación de mi viaje. Pude reservar un chofer para moverme por la ciudad, encontrar excelentes opciones de restaurantes cercanos, revisar la disponibilidad y tarifas de hoteles, y hasta contratar un guía turístico. Ahorré mucho tiempo y esfuerzo, ¡definitivamente la recomiendo!  </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                  <cite className="text-gray-200 not-italic">Anastasia Vera</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Turista</a>
                 </div>
               </div>
 
@@ -45,9 +45,9 @@ function Testimonials() {
                       </svg>
                         </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                  <blockquote className="text-lg text-gray-400 grow">— "La plataforma de turismo que descubrí recientemente ha sido una verdadera bendición. Viajo con frecuencia por trabajo y siempre necesito organizar mi alojamiento, transporte y comidas. Esta plataforma hace todo eso de manera eficiente y conveniente. Me encanta la función de búsqueda de restaurantes basada en la ubicación, así como la disponibilidad en tiempo real de los hoteles.</blockquote>
                   <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                    <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                    <cite className="text-gray-200 not-italic">Brihan F</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Turista</a>
                   </div>
                 </div>
 
@@ -61,9 +61,9 @@ function Testimonials() {
                         </svg>
                         </div>
                     </div>
-                    <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                    <blockquote className="text-lg text-gray-400 grow">— "Me siento muy agradecido de formar parte del plantel de esta plataforma de turismo. Gracias a ella, he encontrado una fuente de trabajo estable y emocionante. Cada día tengo la oportunidad de conocer a viajeros de todo el mundo y mostrarles los encantos de nuestra ciudad.¡Gracias por esta maravillosa oportunidad de trabajo!"</blockquote>
                     <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                      <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                      <cite className="text-gray-200 not-italic">Carlos A.</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Chófer</a>
                     </div>
                   </div>
 

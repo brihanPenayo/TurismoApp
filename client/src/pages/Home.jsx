@@ -7,6 +7,7 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 // import Testimonials from '../partials/Testimonials';
 import Footer from '../partials/Footer';
+import Testimonials from '../partials/Testimonials';
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       {/* <Banner /> */}
 
       {/*  Site footer */}
+      <Testimonials/>
       <Footer />
     </div>
   );
