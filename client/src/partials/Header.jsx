@@ -3,14 +3,18 @@ import { Link, useLocation } from 'react-router-dom';
 import Dropdown from '../utils/Dropdown';
 
 function Header() {
-
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+<<<<<<< HEAD
   const path = useLocation();
+=======
+  const pathName = useLocation();
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
   const trigger = useRef(null);
   const mobileNav = useRef(null);
 
   // close the mobile menu on click outside
   useEffect(() => {
+    console.log(pathName.pathname)
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return;
       if (!mobileNavOpen || mobileNav.current.contains(target) || trigger.current.contains(target)) return;
@@ -38,7 +42,11 @@ function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
+<<<<<<< HEAD
             <Link to="/" className="block" aria-label="TurismoApp">
+=======
+            <Link to="/" className="block" aria-label="Turismo App">
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
               <h1 className='h3'>TurismoApp</h1>
             </Link>
           </div>
@@ -48,8 +56,15 @@ function Header() {
 
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
+              {/* <li> */}
+              {/* <Link to="/signin" className="font-medium text-aml hover:text-aml-bg px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link> */}
+              {/* </li> */}
               <li>
+<<<<<<< HEAD
                 <Link to={path.pathname === '/' ? '/Registros' : '/'} className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">{path.pathname === '/' ? 'Registrarse' : 'Volver'}</Link>
+=======
+                <Link to={pathName.pathname === '/' ? '/Registros' : '/'} className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">{pathName.pathname === '/' ? 'Registrar' : 'Volver'}</Link>
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
               </li>
             </ul>
 
@@ -71,11 +86,11 @@ function Header() {
             {/*Mobile navigation */}
             <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 }}>
               <ul className="bg-gray-800 px-4 py-2">
+                {/* <li> */}
+                  {/* <Link to="/signin" className="flex font-medium w-full text-aml hover:text-aml-b py-2 justify-center">Sign in</Link> */}
+                {/* </li> */}
                 <li>
-                  <Link to="/signin" className="flex font-medium w-full text-aml hover:text-aml-b py-2 justify-center">Sign in</Link>
-                </li>
-                <li>
-                  <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-blk bg-aml hover:bg-aml-b transition duration-150 ease-in-out">Sign up</Link>
+                  <Link to="/" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-blk bg-aml hover:bg-aml-b transition duration-150 ease-in-out">{pathName==='/'? 'Registrar' : 'Volver'}</Link>
                 </li>
               </ul>
             </nav>

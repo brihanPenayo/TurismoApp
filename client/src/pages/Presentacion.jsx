@@ -49,7 +49,7 @@ const Presentacion = () => {
       <Header />
       <div className='bg-white min-h-screen'>
         <header className='flex justify-center items-center'>
-          <h1 className='p-8 text-2xl font-bold text-gray-900'>Registra un servicio</h1>
+          <h1 className='p-8 text-2xl font-bold text-gray-900' data-aos="fade-up" data-aos-delay="200">Registra un servicio</h1>
         </header>
 
         <div className='grid  gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10'>
