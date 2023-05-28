@@ -18,7 +18,7 @@ function HeroHome() {
             <h1 className="h1 mb-4" data-aos="fade-up">
               Turismo App
             </h1>
-            <h2 className='mb-4 h2'>encontrá</h2>
+            <h2 className='mb-4 h2' data-aos='fade-up' data-aos-delay='200'>encontrá</h2>
             <TextLoop data={["Hoteles", "Guias", "Choferes", "Lugares", "Restaurantes"]} interval={4000} />
           </div>
           <div className="max-w-xs mx-auto mb-8 hidden sm:max-w-none sm:flex sm:justify-center">
@@ -30,7 +30,7 @@ function HeroHome() {
           </div>
         </div>
       </div>
-      <Banner/>
+      <Banner />
     </section>
   );
 }
