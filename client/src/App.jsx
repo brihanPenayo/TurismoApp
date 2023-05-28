@@ -19,6 +19,7 @@ import FormChofer from './pages/FormChofer'
 import Filter from './partials/Filter';
 import ItinerarioBuses from './pages/ItinerarioBuses';
 import Testimonials from './partials/Testimonials';
+import Asistente from './pages/Asistente'
 
 
 function App() {
