@@ -14,7 +14,7 @@ const Registro = () => {
 					img: "ruta/imagen-hotel-a.jpg"
 				}],
 				choferes: [{
-					imagen: "ruta/imagen-chofer-1.jpg",
+					imagen: "https://cdn.create.vista.com/api/media/small/204123334/stock-photo-portrait-bearded-smiling-man-shirt",
 					nombre: "Chofer 1",
 					precio: 50,
 					licencia: "123456789",
@@ -116,7 +116,7 @@ const Registro = () => {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		try {
-			localStorage.setItem('dataPerson', JSON.stringify(dataPerson));
+			localStorage.setItem('dataPerson', JSON.stringify(local));
 			Swal.fire({
 				icon: 'success',
 				title: '¡Datos registrados!',
