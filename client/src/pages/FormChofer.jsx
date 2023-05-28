@@ -106,6 +106,9 @@ const Registro = () => {
 		email: '',
 		documento: '',
 		phone: '',
+		tarifa: '',
+		horario: '',
+
 	});
 
 	const handleChange = (event) => {
@@ -147,15 +150,15 @@ const Registro = () => {
 					</div>
 					<div className="mb-4">
 						<label htmlFor="email" className="block text-gray-700 font-bold mb-2">Datos del automóvil:</label>
-						<input type="email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" value={dataPerson.email} onChange={handleChange} required />
+						<input type="email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" name="phone" value={dataPerson.phone} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
 						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Tarifa Base:</label>
-						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="documento" name="documento" value={dataPerson.documento} onChange={handleChange} required />
+						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tarifa" name="tarifa" value={dataPerson.tarifa} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
 						<label htmlFor="documento" className="block text-gray-700 font-bold mb-2">Horario Disponible:</label>
-						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="documento" name="documento" value={dataPerson.documento} onChange={handleChange} required />
+						<input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="horario" name="horario" value={dataPerson.horario} onChange={handleChange} required />
 					</div>
 					<div className="mb-4">
 						<label htmlFor="phone" className="block text-gray-700 font-bold mb-2">Teléfono:</label>

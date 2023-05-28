@@ -17,6 +17,9 @@ import ResetPassword from './pages/ResetPassword';
 import Presentacion from './pages/Presentacion';
 import FormChofer from './pages/FormChofer'
 import Filter from './partials/Filter';
+import ItinerarioBuses from './pages/ItinerarioBuses';
+import Testimonials from './partials/Testimonials';
+
 
 function App() {
 
@@ -47,7 +50,9 @@ function App() {
         <Route path="/Registros" element={<Presentacion />} />
         <Route path='/form-chofer' element={<FormChofer />} />
         <Route path='/cities' element={<Filter />} />
-
+        <Route path='/form-chofer' element={<FormChofer />} />
+        <Route path='/testimonio' element={<Testimonials />} />
+        <Route path='/itinerario-buses' element={<ItinerarioBuses />} />
       </Routes>
     </>
   );
