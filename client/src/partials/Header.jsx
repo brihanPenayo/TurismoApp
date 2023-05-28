@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Dropdown from '../utils/Dropdown';
 
 function Header() {
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
+  const path = useLocation();
   const trigger = useRef(null);
   const mobileNav = useRef(null);
 
@@ -38,7 +38,7 @@ function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
+            <Link to="/" className="block" aria-label="TurismoApp">
               <h1 className='h3'>TurismoApp</h1>
             </Link>
           </div>
@@ -49,10 +49,7 @@ function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link to="/signin" className="font-medium text-aml hover:text-aml-bg px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
-              </li>
-              <li>
-                <Link to="/signup" className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">Sign up</Link>
+                <Link to={path.pathname === '/' ? '/Registros' : '/'} className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">{path.pathname === '/' ? 'Registrarse' : 'Volver'}</Link>
               </li>
             </ul>
 
