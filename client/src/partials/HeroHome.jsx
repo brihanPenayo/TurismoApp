@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 // import Modal from '../utils/Modal';
 import TextLoop from './TextLoop';
 import { Swipers } from './Swipers';
+import { Banner } from './Banner';
 
 
 function HeroHome() {
@@ -29,6 +30,7 @@ function HeroHome() {
           </div>
         </div>
       </div>
+      <Banner/>
     </section>
   );
 }
