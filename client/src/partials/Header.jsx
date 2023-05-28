@@ -31,7 +31,7 @@ function Header() {
   });
 
   return (
-    <header className="absolute w-full z-30 bg-white bg-opacity-50">
+    <header className="sticky w-full z-30 bg-aml-100 bg-opacity-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
 
@@ -72,7 +72,7 @@ function Header() {
             </button>
 
             {/*Mobile navigation */}
-            <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
+            <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 }}>
               <ul className="bg-gray-800 px-4 py-2">
                 <li>
                   <Link to="/signin" className="flex font-medium w-full text-aml hover:text-aml-b py-2 justify-center">Sign in</Link>
