@@ -24,8 +24,8 @@ function HeroHome() {
           </div>
           <div className="max-w-xs mx-auto mb-8 hidden sm:max-w-none sm:flex sm:justify-center">
             <div data-aos="fade-up" data-aos-delay="400">
-              <a className="btn bg-aml hover:bg-aml-b w-full mb-4 sm:w-auto sm:mb-0" href="/Registros">
-                ¡Quiero ofrecer mis servicios!
+              <a className="btn bg-aml hover:bg-aml-b w-full mb-4 sm:w-auto sm:mb-0" href="/cities">
+                Buscar servicios!
               </a>
             </div>
           </div>

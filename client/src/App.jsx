@@ -16,8 +16,10 @@ import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 import Presentacion from './pages/Presentacion';
 import FormChofer from './pages/FormChofer'
+import Filter from './partials/Filter';
 import ItinerarioBuses from './pages/ItinerarioBuses';
 import Testimonials from './partials/Testimonials';
+import Asistente from './pages/Asistente'
 
 
 function App() {
@@ -47,10 +49,11 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/Registros" element={<Presentacion />} />
-        <Route path='/form-chofer' element={<FormChofer/>}/>
-        <Route path='/testimonio' element={<Testimonials/>}/>
-      <Route path='/itinerario-buses' element={<ItinerarioBuses/>}/>
-      
+        <Route path='/form-chofer' element={<FormChofer />} />
+        <Route path='/cities' element={<Filter />} />
+        <Route path='/form-chofer' element={<FormChofer />} />
+        <Route path='/testimonio' element={<Testimonials />} />
+        <Route path='/itinerario-buses' element={<ItinerarioBuses />} />
       </Routes>
     </>
   );

@@ -4,7 +4,11 @@ import Dropdown from '../utils/Dropdown';
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+<<<<<<< HEAD
+  const path = useLocation();
+=======
   const pathName = useLocation();
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
   const trigger = useRef(null);
   const mobileNav = useRef(null);
 
@@ -38,7 +42,11 @@ function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
+<<<<<<< HEAD
+            <Link to="/" className="block" aria-label="TurismoApp">
+=======
             <Link to="/" className="block" aria-label="Turismo App">
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
               <h1 className='h3'>TurismoApp</h1>
             </Link>
           </div>
@@ -52,7 +60,11 @@ function Header() {
               {/* <Link to="/signin" className="font-medium text-aml hover:text-aml-bg px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link> */}
               {/* </li> */}
               <li>
+<<<<<<< HEAD
+                <Link to={path.pathname === '/' ? '/Registros' : '/'} className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">{path.pathname === '/' ? 'Registrarse' : 'Volver'}</Link>
+=======
                 <Link to={pathName.pathname === '/' ? '/Registros' : '/'} className="btn-sm text-white bg-aml hover:bg-aml-b ml-3">{pathName.pathname === '/' ? 'Registrar' : 'Volver'}</Link>
+>>>>>>> 9dea2082eed2a87d9bbedd3d17c2d74fd6d6fd44
               </li>
             </ul>
 
