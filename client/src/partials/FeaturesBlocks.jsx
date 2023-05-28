@@ -42,8 +42,8 @@ function FeaturesBlocks() {
                   </g>
                 </svg>
               </div>
-              <h4 className="h4 mb-2 text-center">Planificación de Viajes Simplificada</h4>
-              <p className="text-lg text-gray-500 text-center">Con nuestra plataforma, puedes planificar y reservar tu viaje completo en un solo lugar. Elige tu destino, selecciona tu alojamiento, organiza tu transporte, reserva tus actividades y más, todo con unos pocos clics.</p>
+              <h4 className="h4 mb-2 text-center">Planificación de Turismo Simplificada</h4>
+              <p className="text-lg text-gray-500 text-center">Con nuestra plataforma, puedes planificar y realizar tu visita en un solo lugar. Elige tu destino, selecciona tu alojamiento, organiza tu transporte, reserva tus actividades y más, todo con unos pocos click.</p>
             </div>
 
             {/* 2nd item */}

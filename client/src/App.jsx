@@ -16,6 +16,7 @@ import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 import Presentacion from './pages/Presentacion';
 import FormChofer from './pages/FormChofer'
+import ItinerarioBuses from './pages/ItinerarioBuses';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/Registros" element={<Presentacion />} />
         <Route path='/form-chofer' element={<FormChofer/>}/>
-
+      <Route path='/itinerario-buses' element={<ItinerarioBuses/>}/>
       </Routes>
     </>
   );
